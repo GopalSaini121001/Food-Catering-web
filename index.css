@@ -1,0 +1,295 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      background-color: #fff;
+
+
+    }
+    a
+    {
+      font-size: 1.3rem;
+    }
+    p{
+      font-size: 1.2rem;
+    }
+
+    .navigation {
+      width: 100%;
+      background-color: #fff;
+      color: #000;
+      display: flex;
+      justify-content: space-between;
+      box-shadow: 0px 1px 0px 1px rgba(0, 0, 0, 0.2);
+      position: fixed;
+      top: 0;
+      z-index: 1;
+    }
+
+    .navigation #logo {
+      font-size: 1.2rem;
+      margin: 10px 15px;
+      letter-spacing: 2px;
+    }
+
+    .navigation #logo a {
+      color: rgba(0, 0, 0, 0.8);
+      display: block;
+      text-decoration: none;
+      padding: 10px 15px;
+    }
+
+    .navigation #nav ul {
+      display: flex;
+      margin: 10px 15px;
+
+
+    }
+
+    .navigation #nav ul li {
+      list-style: none;
+
+
+    }
+
+    .navigation #nav ul li a {
+      padding: 10px 15px;
+      display: block;
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.8);
+
+
+    }
+
+    .navigation #nav ul li a:hover,
+    .navigation #logo a:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .section1 {
+      width: 100%;
+      min-height: 95vh;
+      background: url('images//cake.jpg');
+      background-position: center center;
+      background-size: s cover;
+      opacity: 0.8;
+
+    }
+
+    .section1::before {
+      content: "Le Caterting";
+      font-size: 2.3rem;
+      color: rgba(0, 0, 0, 0.8);
+      letter-spacing: 5px;
+      position: absolute;
+      bottom: 60px;
+      left: 20px;
+      cursor: pointer;
+    }
+
+    .section2,.section3 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .box1 {
+      width: 95%;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .section2 .box1 #imgBox1 {
+      padding: 20px;
+      flex: 1;
+
+
+    }
+
+    .section2 .box1 #imgBox1 img {
+      width: 100%;
+      height: 100%;
+
+    }
+
+    .section2 .box1 #TextBox1 {
+      padding: 20px;
+      flex: 1;
+      text-align: left;
+
+    }
+
+    .section2 .box1 #TextBox1 h1 {
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      font-weight: 300;
+      text-align: center;
+    }
+
+    .section2 .box1 #TextBox1 h6 {
+      font-size: 1rem;
+      letter-spacing: 2px;
+      padding: 10px 0px;
+      color: rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .section2 .box1 #TextBox1 #para,
+    #para1 {
+      margin-bottom: 15px;
+      line-height: 25px;
+    }
+
+    #para1 {
+      opacity: 0.7;
+    }
+
+    .section3 .box1 .menuBar {
+      flex: 1;
+      margin: 20px 15px;
+    }
+
+    .menuBar h1 {
+      text-align: center;
+      padding: 20px;
+      font-weight: 300;
+      letter-spacing: 3px;
+      font-size: 2.5rem;
+    }
+
+    .detail {
+      margin: 30px;
+      line-height: 35px;
+    }
+
+    .detail h3 {
+      letter-spacing: 3px;
+      font-weight: 300;
+    }
+
+    .section3 .box1 .imgBox2 {
+      flex: 1;
+      margin: 20px 15px;
+    }
+
+    .imgBox2 img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .contact {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .contactBox h1 {
+      margin: 20px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      font-size: 2.5rem;
+      line-height: 50px;
+      margin: 20px 0px;
+    }
+
+    .contactBox p {
+      margin: 20px 0px;
+
+    }
+
+    .contactBox h3 {
+      line-height: 30px;
+      color: chocolate;
+    }
+
+    .contactBox .inputBox {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .contactBox .inputBox input {
+      width: 100%;
+      height: 50px;
+      border: none;
+      margin: 15px 0px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    .contactBox .inputBox a {
+      text-decoration: none;
+      padding: 20px 25px;
+      color: #000;
+      background: rgba(0, 0, 0, 0.1);
+      display: block;
+      margin: 10px 0px;
+      width: 220px;
+
+    }
+
+    .contactBox .inputBox a:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      width: 100%;
+      min-height: 15vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(236, 229, 229, 0.5);
+    }
+
+    /* responsive */
+
+    @media screen and (max-width: 550px) {
+      .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .navigation #logo {
+        margin: 10px 15px;
+      }
+
+      .navigation #nav {
+        margin-top: -10px;
+
+      }
+
+
+    }
+
+     @media screen and (max-width: 900px) {
+      .section1 {
+        width: 100%;
+        min-height: 95vh;
+        background: url('images//cake.jpg');
+        background-position: 40% 47px;
+        background-size: cover;
+        opacity: 0.8;
+
+      }
+      .box1
+      {
+        flex-direction: column-reverse;
+      }
+       .section3 .box1
+       {
+        flex-direction: column;
+       }
+
+    }
+
+  
